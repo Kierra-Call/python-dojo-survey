@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <form action="/results" method="post">
+            <h1>Dojo Survey</h1>
+            <label for="name">Name:</label>
+            <input type="text" name="name">
+            <label for="location">Dojo Location:</label>
+            <select name="location">
+                <option selected disabled>-- Select Location --</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Online">Online</option>
+                <option value="Burbank">Burbank</option>
+                <option value="Belleview">Belleview</option>
+        </select>
+        <label for="language">Favorite Language:</label>
+        <select name="language">
+            <option selected disabled>-- Select Language --</option>
+            <option value="Python">Python</option>
+            <option value="Javascript">Javascript</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="C#">C#</option>
+            <option value="Java">Java</option>
+        </select>
+        <label for="name">Comments:</label>
+        <input type="text" name="comments">
+        <button>Submit</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
